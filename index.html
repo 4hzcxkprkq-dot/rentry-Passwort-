@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Geschützte Seite</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;margin-top:50px">
+
+  <h2>PaRis21</h2>
+
+  <input type="password" id="pw" placeholder="Passwort">
+  <br><br>
+  <button onclick="checkPw()">Weiter</button>
+
+  <script>
+    function checkPw() {
+      const richtig = "MEINPASSWORT";
+      const eingabe = document.getElementById("pw").value;
+
+      if (eingabe === richtig) {
+        window.location.href = "https://rentry.co/DEINLINK";
+      } else {
+        alert("Falsches Passwort");
+      }
+    }
+  </script>
+
+</body>
+</html>
